@@ -1,0 +1,327 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #7f8c8d;;
+
+}
+#topnav li {
+    display: inline;
+    list-style-type: none;
+
+}
+
+/* home page styling*/
+
+.container {
+    
+    padding : 30px 140px 0px 140px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: auto;
+    position: relative;
+
+}
+ 
+
+.heading, .sub_head, .btn1, .btn2, .home_para{
+    font-family: Avenir-Next,Roboto,sans-serif;
+    color: white;
+}
+
+.heading {
+   
+    padding: 0px 80px 0px 75px ;
+    position: relative;
+    bottom:-40px;
+    font-size: 91px;
+}
+    
+   
+ .sub_head {
+     font-size: 33px;
+     
+     padding-left: 85px;
+     
+ }
+
+ .btn1 {
+     cursor:pointer;
+     border: none;
+     text-align: centre;
+     padding: 15px 75px;
+     margin-left: 80px;
+     background-color: #4992ca ;
+
+ }
+
+ .btn2 {
+     cursor: pointer;
+     margin-top: 30px;
+     margin-left: 80px;
+     padding: 15px 50px;
+     border: 2px solid ;
+     background-color: transparent;
+ }
+
+.container  p {
+    background-color: white;
+     border: 2px solid white;
+     border-radius: 15px;
+     margin-top: 30px;
+     margin-left: 80px;
+     margin-bottom: 120px;
+     display: inline-block;
+     color: black;
+     padding: 15px 10px;
+     
+}
+
+ .btn3 {
+     cursor: pointer;
+     border: none;
+     color: black;
+     font-size: 16px;
+     background-color: white;
+
+    
+ }
+
+ /* media queries for home page */
+
+@media screen and (max-width: 1024px) {
+
+.btn2 {
+    display: inline-block;
+}
+
+}
+/* pokemon monster*/
+
+.container1 {
+background-color:  #4992ca;
+position: static;
+
+top: -37px; 
+height: auto;
+width: 100%;
+padding-left:250px ;
+padding-right: 200px;
+
+font-family: Avenir-Next,Roboto,sans-serif;
+display: flex;
+justify-content: center;
+
+}
+
+.heading1 {
+    text-align: center;
+    font-family: Avenir-Next,Roboto,sans-serif;
+    font-size: 45px;
+    color: whitesmoke;
+    padding: 30px;
+    position: relative;
+    
+}
+
+.para1 ,.para2{
+    text-align: center;
+     position: relative;
+     top: -30px;
+     color: white;
+    
+}
+     
+     
+
+.container1 section{
+    width: 90%;
+   
+}
+
+.box {
+   
+    height: auto; 
+    max-width: 360px;
+    margin: 10px;
+    margin-bottom: 100px;
+   
+    
+    
+}
+
+.flex {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    
+}
+
+.fire, .water, .grass {
+    color: whitesmoke;
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.flexpara {
+    text-align: center;
+    line-height: 1.5em;
+    color: white;
+}
+
+.logo {
+    text-align: center;
+    font-size: 50px;
+    position: relative; 
+    top: 20px;
+    color: white;
+}
+
+/* static section */
+.statics {
+    
+    background-color: white;
+    position: relative;
+    top: -37px;
+    padding-bottom: 100px;
+
+}
+.staticsflex{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.statics_box {
+    max-width: 550px;
+    margin: 5px;
+    
+}
+    
+.staticsheading {
+    text-align: center;
+    font-family: Avenir-Next,Roboto,sans-serif;
+    font-size: 45px;
+    padding-top: 30px;
+    margin-bottom: 0px;
+}
+
+.statics_h4 {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 0px;
+    
+}
+
+.statics_para {
+    text-align: center;
+    color: black;
+    line-height: 1.5em;
+    font-family: Avenir-Next,Roboto,sans-serif;
+    
+}
+.statics_image {
+    text-align: center;
+}
+
+
+/* pokemon of the year*/
+.pokemon_year
+{
+    background-color: white;
+    position: relative;
+    padding-top: 10px;
+    top: -40px;
+    
+    
+    
+}
+ 
+.flex_year 
+{
+     display: flex; 
+     
+     justify-content: center; 
+     
+   
+}
+.year_h4 {
+    text-align: center;
+    font-size: 30px;
+    font-family:  Avenir-Next,Roboto,sans-serif;
+    margin: 0px;
+}
+.year_box {
+    border: 2px solid black;
+    height: auto;    
+    width: auto;
+    flex-direction: column;
+    
+    display: flex;;
+   
+}
+.box1 {
+    
+    border: 2px solid black;
+    height: 150px;
+    width: 150px;
+}
+
+                  /* Q and A*/
+.QA {
+    background-color: #4992ca ;
+    position: relative;
+    top: -37px;
+    padding-bottom: 40px;
+} 
+.QA_h2 {
+    font-size: 45px;
+    font-family: Avenir-Next,Roboto,sans-serif;
+    text-align: center;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 50px;
+}
+.QA_article{
+    text-align: left;
+    padding-left: 20%;
+    max-width: 90%;
+    
+}
+
+.QA_para {
+text-align: left;
+color: white;
+font-size: 23px;
+font-family: venir-Next,Roboto,sans-serif;
+} 
+.QA_ol {
+    line-height: 1.5em;
+    margin: 0px;
+    padding: 0px;
+}
+
+.QA_ol {
+    color: white;
+    line-height: 1.5em;
+}  
+.QA_ul li {
+line-height: 2em;
+font-family: venir-Next,Roboto,sans-serif;
+} 
+
+.li_1 {
+    font-size: 23px;
+    font-family: Avenir-Next,Roboto,sans-serif;
+}
+/* pokemon Battle */
