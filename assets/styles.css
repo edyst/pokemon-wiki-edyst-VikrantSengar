@@ -134,6 +134,7 @@ select:hover{
     border: 2px solid #fff;
     max-width: 420px;
 }
+
 .pocket_monster{
     background-color: #4992ca;
     padding-bottom: 40px;
@@ -184,6 +185,7 @@ select:hover{
     font-size: 15px;
     line-height: 170%;
 }
+
 .statistics-heading{
     font-size: 45px;
     color: black;
@@ -220,20 +222,25 @@ select:hover{
 }
 
 .poy_div1{
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    margin-left: 130px;
-    margin-right: 130px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 140px;
+    margin-right: 140px;
     margin-top: 30px;
 }
 .image_img{
+    flex: 1;
     max-width: 160px;
+    height: fit-content;
     border-radius: 50%;
 }
 .img-3{
+    height: fit-content;
     max-width: 160px;
 }
 .poy_subdiv1{
+    flex: 1;
     max-width: 160px;
     margin-left: 50px;
     margin-right: 25px;
@@ -249,22 +256,23 @@ select:hover{
     text-align: center;
 }
 .poy_para{
+    min-width: 300px;
+    flex: 4;
     margin-left: 25px;
     margin-bottom: 60px;
 }
 
-/* Q and A section (Section 6) */
-.qna{
+.questionAns{
     background-color:#4992ca;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 30px 0px 40px 0px;
 }
-.qna > .head2{
+.questionAns > .heading_2{
     padding-bottom: 0px;
 }
-#qna{
+.question_page{
     max-width: 1200px;
     display: flex;
     flex-direction: column;
@@ -273,51 +281,50 @@ select:hover{
     padding-left: 15px;
     padding-right: 15px;
 }
-.head8{
+.qna_subhead{
     color: #fff;
     font-size:20px;
     margin-bottom: 0px;
     
 }
-.ulist{
+.qna_list{
     list-style: circle;
     margin-top: 5px;
 }
-.ulist > li{
+.qna_list > li{
     color: #fff;
     margin-left: 80px;
     line-height: 150%;
 }
 
-/* Pokemon Battles (Section 7) */
-.pokemon_battles{
+.battles{
     padding: 30px 180px 20px 180px;
 }
-.head9{
+.battles_subhead{
     color: black;
     text-align: center;
 }
-.container3{
+.battle_container{
     display: flex;
 }
-.paragraph{
+.paragraph_main{
     flex: 1;
     margin-right: 10px;
 }
-.phead{
+.battle_section_para{
     color: black;
     font-weight: 700;
     font-size: 16px;
     margin-top: 0px;
 }
-.para5{
+.paragraph_sub_battle{
     line-height: 180%;
 }
-.tables{
+.tablee{
     flex: 2;
     margin-left: 10px;
 }
-.actual_table,th,td{
+.table_1,th,td{
     border: 1px solid #7f8c8d;
     border-collapse: collapse;
     color:  #8a8a8a;
@@ -325,53 +332,46 @@ select:hover{
 th{
     color: black;
     font-weight: 700;
-    padding-left: 7px;
+    padding-left: 8px;
     text-align: left;
-    padding-top: 7px;
-    padding-bottom: 7px;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 td{
-    padding-left: 7px;
-    padding-top: 7px;
-    padding-bottom: 7px;
+    padding-left: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 10px;
 }
-.para6{
+.battle_section_para2{
     color: black;
     font-weight: 400;
 }
-.para7{
+.battle_section_para3{
     color: #4992ca;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 18px;
     text-align: center;
 }
-.btn5{
+.battle_section_button{
     display: block;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     color: #fff;
     background-color: #4992ca;
-    max-width: 200px;
+    max-width: 220px;
     text-decoration: none;
-    padding-top: 7px;
-    padding-bottom: 7px;
-}
-.btn5:hover{
-    color:#4992ca;
-    background-color: #fff;
-    border:2px solid #4992ca;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-/* Know more about pokemon Section (Section 8) */
-.know_more{
+.know_more_section{
     background-color: #424242;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
-.head10{
+.km_heading{
     color: #fff;
     text-align: center;
     font-size: 45px;
@@ -380,7 +380,7 @@ td{
     margin-left: 10px;
     margin-right: 10px;
 }
-.btn6{
+.km_button{
     color: #fff;
     border: 2px solid #fff;
     background-color: #0000;
@@ -394,74 +394,68 @@ td{
     padding-bottom: 10px;
     border-radius: 2px;
 }
-.btn6:hover{
-    color: #424242;
-    background-color: #fff;
-}
 
-/* Pokemon Card (Section 9) */
-.pokemon_card{
+.pokemon_card_section{
     text-align: center;
     margin-bottom: 30px;
 }
-.head11{
+.pokemon_card_head{
     font-size: 45px;
     font-weight: 700;
     margin-bottom: 7px;
 }
-.card1{
+.pokemon_card_container{
     display: block;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     max-width: 200px;
 }
-.imgsect{
+.image_section{
     border: 1px solid rgb(224, 223, 223);
     border-top: 15px solid #4992ca;
     background-color: rgb(247, 245, 245);
 }
-.head12{
+.image_section_heading{
     margin-top: 7px;
     margin-bottom: 0px;
     font-weight: 300;
 }
-.head13{
+.image_section_heading2{
     margin-top: 0px;
     margin-bottom: 10px;
     color: black;
 }
-.textsect{
-    border: 1px solid rgb(224, 223, 223);
+.text_section{
+    border: 1px solid rgb(223, 223, 223);
     border-top: #0000;
     margin-top: 0%;
 }
-.para8{
+.text_para{
     margin-top: 0%;
     color: black;
-    padding-top: 20px;
+    padding-top: 22px;
     padding-bottom: 10px;
 }
 
-/* Pokemon Trainers Section (Section 10) */
-.pts{
+.pokemon_trainer{
     background-color: #4992ca;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 20px 20px 20px;
 }
-.head14{
+.pokemon_heading{
     color: #fff;
     font-size: 45px;
     text-align: center;
     margin-bottom: 20px;
 }
-.head15 , .head16{
+.trainer_subheading{
     color: #fff;
     margin-top: 0px;
     margin-bottom: 0px;
     text-align: center;
 }
 .para9{
+    flex: 4;
     margin-left: 25px;
     margin-bottom: 60px;
     color: #fff;
