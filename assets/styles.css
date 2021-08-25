@@ -454,14 +454,13 @@ td{
     margin-bottom: 0px;
     text-align: center;
 }
-.para9{
+.trainer_para{
     flex: 4;
     margin-left: 25px;
     margin-bottom: 60px;
     color: #fff;
 }
 
-/* Cards Section (Section 11) */
 .cards_section{
     padding-left: 140px;
     padding-right: 140px;
