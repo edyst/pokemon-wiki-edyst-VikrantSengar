@@ -3,32 +3,26 @@
     font-size: 16px;
     color: #7f8c8d;
 }
-
-/* Navigation Bar (Section 1) */
 nav{
     background-color: #fff;
 }
-.navbar{
+.navigation_bar{
     display:flex;
     justify-content: space-between;
 }
-.navbar > ul{
+.navigation_bar > ul{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     list-style: none;
     margin-top: 0%;
     margin-bottom: 0%;
     align-items: center;
 }
-.navbar > ul > li{
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+#list-items{
+    margin: 5px 25px 5px 25px;
 }
-
-.logo{
+.edyst_logo{
 text-align: left;
 height: 30px;
 width: auto;
@@ -36,35 +30,37 @@ display: block;
 margin-top: auto;
 margin-bottom:auto;
 }
-.flag{
+.indian_flag{
     height:24px;
     width: auto;
     text-align: right;
     vertical-align: middle;
 }
-.dropdown_button{
+.dropdown{
     border:none;
     outline:0px;
 }
 select{
     border:none;
+    color: #7f8c8d;
 }
 select:hover{
     cursor: pointer;
-    color: rgb(32, 32, 32);
+    color: black;
 }
-.button1{
+.navbar_button{
     height: 24px;
     border: none;
     text-decoration: none;
+    color: #7f8c8d;
 }
-.button1:hover{
-    color: rgb(32, 32, 32);
+.navbar_button:hover{
+    color: black;
 }
-.button2{
+.apply_button{
     height: 24px;
     background-color: tomato;
-    min-width: 100px;
+    min-width: 95px;
     color: #fff;
     border: none;
     text-decoration: none;
@@ -74,20 +70,14 @@ select:hover{
     padding-bottom: 2px;
     border-radius: 2px;
 }
-.button2:hover{
-    color:tomato;
-    background-color: #fff;
-}
-
-/* Home Page (Section 2) */
-.home_page{
+.home-page{
     position: relative;
     background-image: url('https://i.imgur.com/ksqOx5F.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    padding-bottom: 80px;
+    padding-bottom: 82px;
 }
-.container{
+.homepage-section{
     position: relative;
 }
 .overlay{
@@ -97,92 +87,65 @@ select:hover{
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 1;
 }
-.intro{
+.introduction1{
     font-size: 90px;
     color: #fff;
-    margin-top: 4px;
+    margin-top: 6px;
     margin-bottom: 0%;
     text-align: left;
-    padding: 50px 0px 0px 130px;
+    padding: 50px 0px 0px 125px;
 }
-.sub_intro{
+.introduction2{
     font-size: 33px;
     color: #fff;
     margin-top: 0%;                              
     text-align: left;
-    padding-left: 130px;
+    padding-left: 125px;
     padding-top: 10px;
 }
-.btn1{
+.buttons_home1{
     color:#fff;
     background-color: #4992ca;
     border: none;
-    margin-left: 130px;
+    margin-left: 125px;
     margin-top: 0px;
     padding: 10px 60px 10px 60px;
     text-decoration: none;
 }
-.btn1:hover{
-    color:#4992ca;
-    background-color: #fff;
-    border:2px solid #4992ca;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    font-weight: 700;
-}
-.btn2{
-    line-height: 650%;
+.buttons_home2{
+    line-height: 700%;
     color:#fff;
     background-color: #0000;
-    margin-left: 130px;
+    margin-left: 125px;
     padding: 10px 31px 10px 31px;
     text-decoration: none;
     border: 2px solid #fff;
     border-radius: 2px;
 }
-.btn2:hover{
-    color:black;
-    background-color: #fff;
-}
-
-.btn3{
+.buttons_home3{
     color:#424242;
     background-color: #fff;
     border-radius:15px;
-    margin-left: 130px;
+    margin-left: 125px;
     margin-top: 0px;
-    padding: 12px 31px 12px 31px;
+    padding: 12px 32px 12px 32px;
     text-decoration: none;
     border: 2px solid #fff;
     max-width: 420px;
 }
-.btn3:hover{
-    cursor: pointer;
-    color: #fff;
-    background-color: #0000;
-    border: 2px solid #fff;
-}
-.btn4{
-    color:inherit;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-/* Pocket Monster Section (Section 3) */
-.pokemon_monster{
+.pocket_monster{
     background-color: #4992ca;
     padding-bottom: 40px;
 }
-.head2{
+.heading_2{
     color: #fff;
     font-size: 40px;
     text-align: center;
     margin: 0%;
     padding: 20px 20px 20px 20px;
 }
-.para1{
+.pocket_para{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -196,12 +159,12 @@ select:hover{
     justify-content: center;
     margin-top: 60px;
 }
-.div1{
+.division{
     max-width: 320px;
     margin-left: 20px;
     margin-right: 20px;
 }
-.div1 > .fas{
+.division > .fas{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -209,85 +172,83 @@ select:hover{
     color: #fff;
     font-size: 40px;
 }
-.head4{
+.division > .heading_4{
+    margin-top: 15px;
     color: #fff;
-    font-size: 30px;
+    font-size: 33px;
     text-align: center;
 }
-.para2{
+.division > .pocket_para{
     color: #fff;
     text-align: center;
     font-size: 15px;
     line-height: 170%;
 }
-
-/* Statistics Section (Section 4) */
-.head5{
+.statistics-heading{
     font-size: 45px;
     color: black;
     text-align: center;
 }
-.statistics_section > .head5{
+.statistics > .statistics-heading{
     margin-bottom: 0px;
 }
-.container2{
+.big_div{
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.div2{
+.smalldiv_1{
     text-align: center;
-    max-width: 500px;
-}
-.div2_1{
+    max-width: 480px;
     margin-right: 20px;
 }
-.div2_2{
+.smalldiv_2{
+    text-align: center;
+    max-width: 480px;
     margin-left: 20px;
 }
-.div2 > .head6{
+.staticcssubhead{
     color: black;
     font-size: 30px;
     font-weight: 100;
     margin-top: 20px;
 }
-.para3{
+.stat_para{
     color: black;
     font-size: 14px;
     margin-top: 20px;
 }
 
-/* Pokemon of the year section (Section 5) */
-.div3{
+.poy_div1{
     display: grid;
     grid-template-columns: auto auto auto auto auto;
-    margin-left: 140px;
-    margin-right: 140px;
+    margin-left: 130px;
+    margin-right: 130px;
     margin-top: 30px;
 }
-.img2{
+.image_img{
     max-width: 160px;
     border-radius: 50%;
 }
-.img3{
+.img-3{
     max-width: 160px;
 }
-.subdiv1{
+.poy_subdiv1{
     max-width: 160px;
     margin-left: 50px;
     margin-right: 25px;
 }
-.head6{
+.poy_heading6{
     margin-top: 0px;
     margin-bottom: 0px;
     text-align: center;
 }
-.head7{
+.poy_heading7{
     margin-top: 0px;
     margin-bottom: 0px;
     text-align: center;
 }
-.para4{
+.poy_para{
     margin-left: 25px;
     margin-bottom: 60px;
 }
